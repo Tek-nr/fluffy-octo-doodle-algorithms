@@ -1,0 +1,15 @@
+def fibonacci(num):
+    if num < 0:
+        return 'invalid value'
+    elif num == 0:
+        return 0
+    elif num == 1 or num == 2 :
+        return 1
+    else:
+        return fibonacci(num-1) + fibonacci(num-2)
+
+
+# Press the green button in the gutter to run the script.
+if __name__ == '__main__':
+    result = fibonacci(8)
+    print(result)
